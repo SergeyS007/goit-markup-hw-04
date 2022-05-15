@@ -105,6 +105,7 @@ ul {
 
 .contacts-nav .contact-mail-tel {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -129,9 +130,15 @@ ul {
   color: var(--accent-color);
 }
 
-.icon {
+.icon-mail {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-tel {
+  width: 10px;
+  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -205,6 +212,8 @@ ul {
 
 .team .list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .team .item + .item {
   margin-left: 30px;
@@ -226,6 +235,11 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team .link {
+  width: 20px;
+  height: 20px;
+  color: #afb1b8;
+}
 .foto {
   display: block;
 }
@@ -233,27 +247,24 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.wrapper-icons {
-  display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
-}
+
 .item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
-  padding: 12px;
-  color: #afb1b8;
 }
 .item-icon:not(:last-child) {
   margin-right: 10px;
 }
-.wrapper-icons .wrapper-icon {
+.wrapper .wrapper-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
-.wrapper-icons .item-icon:hover {
+.wrapper .item-icon:hover {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
@@ -271,6 +282,8 @@ ul {
 }
 
 .positions {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -328,10 +341,9 @@ ul {
   display: inline-flex;
   width: 270px;
   height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
+  align-items: center;
+  justify-content: center;
+
   margin-bottom: 30px;
   background-color: #f5f4fa;
   fill: currentColor;
@@ -339,7 +351,7 @@ ul {
 
 .list-under-hero .icon {
   display: inline-flex;
-  width: 70px;
+  width: 100%;
   height: 70px;
   margin-right: 0;
 
@@ -383,12 +395,13 @@ ul {
   padding-bottom: 0;
 }
 .wrapper-clients-icons .clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 170px;
   height: 92px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -480,9 +493,7 @@ ul {
   padding-bottom: 100px;
   margin-left: 70px;
 }
-.footer-icons {
-  padding-bottom: 100px;
-}
+
 .footer-icons {
   padding-left: 0;
   padding-right: 0;
@@ -491,8 +502,15 @@ ul {
 .footer-icons .list {
   display: flex;
 }
+.footer-icons .link {
+  width: 20px;
+  height: 20px;
+}
 
 .footer-icons .item-icon {
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
